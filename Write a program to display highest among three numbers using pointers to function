@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int p,q,r;
+int *x,*y,*z;
+void large(int,int,int);
+clrscr();
+printf("enter value for p,q and r:");
+scanf("%d%d%d",&p,&q,&r);
+large(p,q,r);
+getch();
+}
+void large(int p,int q,int r)
+{
+int *x,*y,*z;
+x=&p;
+y=&q;
+z=&r;
+if((*x)>(*y) && (*x)>(*z))
+{
+printf("\n %d is largest",*x);
+}
+else
+if((*y)>(*x) && (*y)>(*z))
+{
+printf("\n %d is largest",*y);
+}
+else
+{
+printf("\n %d is largest",*z);
+}
+}
