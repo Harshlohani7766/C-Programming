@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+void main ()
+{
+int i;
+char three_planets[3][8]={"mars","mercury","venus"};
+clrscr();
+for(i=0;i<=2;i++)
+{
+printf("%s\n",three_planets[i]);
+}
+getch();
+}
