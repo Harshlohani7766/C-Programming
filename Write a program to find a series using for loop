@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+void main ()
+{
+int n;
+clrscr();
+printf("series of numbers from 1-20\n");
+for(n=1;n<=20;n++)
+{
+printf("%d\t",n);
+}
+getch();
+}
