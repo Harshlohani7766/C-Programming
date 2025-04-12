@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b,c;
+clrscr();
+float d;
+printf("Enter value for a:");
+scanf("%d",&a);
+printf("Enter value for b:");
+scanf("%d",&b);
+c=a+b;
+printf("\n addition=%d",c);
+c=a-b;
+printf("\n subtract=%d",c);
+c=a*b;
+printf("\n multiplication=%d",c);
+d=(float)a/b;
+printf("\n division=%f",d);
+getch();
+}
