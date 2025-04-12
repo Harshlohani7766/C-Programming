@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main ()
+{
+int a,b,c;
+int result(int,int);
+clrscr();
+printf("enter any number\n");
+scanf("%d",&a);
+printf("enter exponent\n");
+scanf("%d",&b);
+c=result(a,b);
+printf("result=%d",c);
+getch();
+}
+int result(int a,int b)
+{
+int c;
+if(b==0)
+return (1);
+else
+return a* pow(a,b-1);
+}
