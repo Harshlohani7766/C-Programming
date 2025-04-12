@@ -1,0 +1,52 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b,c,d,i,j,k;
+int p[5][5],q[5][5],r[5][5];
+clrscr();
+printf("enter the order of matrix p;");
+scanf("%d%d",&a,&b);
+printf("enter the order of matrix q;");
+scanf("%d%d",&c,&d);
+if(b!=c)
+printf("\n matrices cannot be multiplied");
+else
+printf("\n enter elements of matrix p:");
+for(i=0;i<=a;i++)
+{
+for(j=0;j<b;j++)
+{
+scanf("%d",&p[i][j]);
+}
+}
+printf("\n enter the elements of matrix q:");
+for(i=0;i<c;i++)
+{
+for(j=0;j<d;j++)
+{
+scanf("%d",&q[i][j]);
+}
+}
+for(i=0;i<a;i++)
+{
+for(j=0;j<d;j++)
+{
+r[i][j]=0;
+for(k=0;k<c;k++)
+{
+r[i][j]=r[i][j]+(p[i][k]*q[k][j]);
+}
+}
+}
+printf("\n matrix r:");
+for(i=0;i<a;i++)
+{
+for(j=0;j<d;j++)
+{
+printf("%d\t",r[i][j]);
+}
+printf("\n");
+}
+getch();
+}
