@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,num[5],se,so;
+clrscr();
+for(i=0;i<5;i++)
+{
+printf("enter number");
+scanf("%d",&num[i]);
+}
+se=0;
+so=0;
+for(i=0;i<=5;i++)
+{
+if(num[i]%2==0)
+se=se+num[i];
+else
+so=so+num[i];
+}
+printf("\n sum of even numbers=%d",se);
+printf("\n sum of odd numbers=%d",so);
+getch();
+}
